@@ -1,0 +1,232 @@
+local Public = Instance.new("ScreenGui")
+local PublicFrame = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local ScriptBox = Instance.new("TextBox")
+local DropShadowHolder = Instance.new("Frame")
+local DropShadow = Instance.new("ImageLabel")
+local ExecuteButton = Instance.new("ImageButton")
+local ClearButton = Instance.new("ImageButton")
+local CloseButton = Instance.new("ImageButton")
+local NotificationUI = Instance.new("Frame")
+local UI = Instance.new("Frame")
+local UIBorder = Instance.new("Frame")
+local NotificationText = Instance.new("TextLabel")
+local UIListLayout = Instance.new("UIListLayout")
+local DropShadowHolder_2 = Instance.new("Frame")
+local DropShadow_2 = Instance.new("ImageLabel")
+
+Public.Name = "Public"
+Public.Parent = game.CoreGui
+Public.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+PublicFrame.Name = "PublicFrame"
+PublicFrame.Parent = Public
+PublicFrame.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+PublicFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+PublicFrame.BorderSizePixel = 0
+PublicFrame.Position = UDim2.new(0.155882359, 0, 0.294641197, 0)
+PublicFrame.Size = UDim2.new(0, 363, 0, 216)
+
+TextLabel.Parent = PublicFrame
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(-0.0716253445, 0, 0, 0)
+TextLabel.Size = UDim2.new(0, 185, 0, 35)
+TextLabel.Font = Enum.Font.Arial
+TextLabel.Text = "Public"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+ScriptBox.Name = "ScriptBox"
+ScriptBox.Parent = PublicFrame
+ScriptBox.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+ScriptBox.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScriptBox.BorderSizePixel = 0
+ScriptBox.Position = UDim2.new(0.0220385678, 0, 0.273148149, 0)
+ScriptBox.Size = UDim2.new(0, 347, 0, 150)
+ScriptBox.Font = Enum.Font.FredokaOne
+ScriptBox.PlaceholderText = "Public: Insert Script"
+ScriptBox.Text = ""
+ScriptBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScriptBox.TextSize = 14.000
+ScriptBox.TextWrapped = true
+ScriptBox.TextXAlignment = Enum.TextXAlignment.Left
+ScriptBox.TextYAlignment = Enum.TextYAlignment.Top
+
+DropShadowHolder.Name = "DropShadowHolder"
+DropShadowHolder.Parent = ScriptBox
+DropShadowHolder.BackgroundTransparency = 1.000
+DropShadowHolder.BorderSizePixel = 0
+DropShadowHolder.Size = UDim2.new(1, 0, 1, 0)
+DropShadowHolder.ZIndex = 0
+
+DropShadow.Name = "DropShadow"
+DropShadow.Parent = DropShadowHolder
+DropShadow.AnchorPoint = Vector2.new(0.5, 0.5)
+DropShadow.BackgroundTransparency = 1.000
+DropShadow.BorderSizePixel = 0
+DropShadow.Position = UDim2.new(0.5, 0, 0.5, 0)
+DropShadow.Size = UDim2.new(1, 47, 1, 47)
+DropShadow.ZIndex = 0
+DropShadow.Image = "rbxassetid://6014261993"
+DropShadow.ImageColor3 = Color3.fromRGB(0, 0, 0)
+DropShadow.ImageTransparency = 0.500
+DropShadow.ScaleType = Enum.ScaleType.Slice
+DropShadow.SliceCenter = Rect.new(49, 49, 450, 450)
+
+ExecuteButton.Name = "ExecuteButton"
+ExecuteButton.Parent = PublicFrame
+ExecuteButton.BackgroundColor3 = Color3.fromRGB(84, 84, 84)
+ExecuteButton.BackgroundTransparency = 1.000
+ExecuteButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ExecuteButton.BorderSizePixel = 0
+ExecuteButton.Position = UDim2.new(0.0220385678, 0, 0.16203703, 0)
+ExecuteButton.Size = UDim2.new(0, 16, 0, 18)
+ExecuteButton.Image = "rbxassetid://12099513379"
+
+ClearButton.Name = "ClearButton"
+ClearButton.Parent = PublicFrame
+ClearButton.BackgroundColor3 = Color3.fromRGB(84, 84, 84)
+ClearButton.BackgroundTransparency = 1.000
+ClearButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ClearButton.BorderSizePixel = 0
+ClearButton.Position = UDim2.new(0.0881542712, 0, 0.16203703, 0)
+ClearButton.Size = UDim2.new(0, 16, 0, 18)
+ClearButton.Image = "rbxassetid://93193121"
+
+CloseButton.Name = "CloseButton"
+CloseButton.Parent = PublicFrame
+CloseButton.BackgroundColor3 = Color3.fromRGB(84, 84, 84)
+CloseButton.BackgroundTransparency = 1.000
+CloseButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+CloseButton.BorderSizePixel = 0
+CloseButton.Position = UDim2.new(0.931129456, 0, 0, 0)
+CloseButton.Size = UDim2.new(0, 25, 0, 27)
+CloseButton.Image = "rbxassetid://2777727756"
+
+NotificationUI.Name = "NotificationUI"
+NotificationUI.Parent = PublicFrame
+NotificationUI.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+NotificationUI.BackgroundTransparency = 1.000
+NotificationUI.BorderColor3 = Color3.fromRGB(0, 0, 0)
+NotificationUI.BorderSizePixel = 0
+NotificationUI.Position = UDim2.new(0.360881537, 0, 0, 0)
+NotificationUI.Size = UDim2.new(0, 100, 0, 100)
+
+UIListLayout.Parent = NotificationUI
+UIListLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
+UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout.Padding = UDim.new(0, 9)
+
+DropShadowHolder_2.Name = "DropShadowHolder"
+DropShadowHolder_2.Parent = PublicFrame
+DropShadowHolder_2.BackgroundTransparency = 1.000
+DropShadowHolder_2.BorderSizePixel = 0
+DropShadowHolder_2.Size = UDim2.new(1, 0, 1, 0)
+DropShadowHolder_2.ZIndex = 0
+
+DropShadow_2.Name = "DropShadow"
+DropShadow_2.Parent = DropShadowHolder_2
+DropShadow_2.AnchorPoint = Vector2.new(0.5, 0.5)
+DropShadow_2.BackgroundTransparency = 1.000
+DropShadow_2.BorderSizePixel = 0
+DropShadow_2.Position = UDim2.new(0.5, 0, 0.5, 0)
+DropShadow_2.Size = UDim2.new(1, 47, 1, 47)
+DropShadow_2.ZIndex = 0
+DropShadow_2.Image = "rbxassetid://6014261993"
+DropShadow_2.ImageColor3 = Color3.fromRGB(0, 0, 0)
+DropShadow_2.ImageTransparency = 0.500
+DropShadow_2.ScaleType = Enum.ScaleType.Slice
+DropShadow_2.SliceCenter = Rect.new(49, 49, 450, 450)
+
+function ExecuteEvent(func)
+	pcall(func)
+end
+
+function KickPlayer(Reason)
+	game.Players.LocalPlayer:Kick(Reason)
+end
+
+function Clear()
+	ScriptBox.Text = ""
+end
+
+function SendNotification(text, seconds)
+	local UI = Instance.new("Frame")
+	local UIBorder = Instance.new("Frame")
+	local NotificationText = Instance.new("TextLabel")
+
+	UI.Name = "UI"
+	UI.Parent = NotificationUI
+	UI.BackgroundColor3 = Color3.fromRGB(53, 53, 53)
+	UI.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	UI.BorderSizePixel = 0
+	UI.Position = UDim2.new(-0.149118349, 0, 0.0399999991, 0)
+	UI.Size = UDim2.new(0, 130, 0, 23)
+
+	UIBorder.Name = "UIBorder"
+	UIBorder.Parent = UI
+	UIBorder.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	UIBorder.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	UIBorder.BorderSizePixel = 0
+	UIBorder.Position = UDim2.new(-0.00296443049, 0, 0.0869565234, 0)
+	UIBorder.Size = UDim2.new(0, 130, 0, -2)
+
+	NotificationText.Name = "NotificationText"
+	NotificationText.Parent = UI
+	NotificationText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	NotificationText.BackgroundTransparency = 1.000
+	NotificationText.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	NotificationText.BorderSizePixel = 0
+	NotificationText.Position = UDim2.new(0, 0, 0.0869565234, 0)
+	NotificationText.Size = UDim2.new(0, 130, 0, 21)
+	NotificationText.Font = Enum.Font.FredokaOne
+	NotificationText.Text = text
+	NotificationText.TextColor3 = Color3.fromRGB(255, 255, 255)
+	NotificationText.TextScaled = true
+	NotificationText.TextSize = 14.000
+	NotificationText.TextWrapped = true
+	wait(seconds)
+	local TweenService = game:GetService("TweenService")
+	local Tween = TweenService:Create(UI, TweenInfo.new(1), {BackgroundTransparency = 1})
+	
+	Tween:Play()
+end
+
+function TweenCloseButton()
+	local TweenService = game:GetService("TweenService")
+	local Tween = TweenService:Create(CloseButton, TweenInfo.new(1), {ImageColor3 = Color3.fromRGB(255, 24, 7)})
+
+	Tween:Play()
+end
+
+function unTweenCloseButton()
+	local TweenService = game:GetService("TweenService")
+	local Tween = TweenService:Create(CloseButton, TweenInfo.new(1), {ImageColor3 = Color3.fromRGB(255, 255, 255)})
+
+	Tween:Play()
+end
+
+ExecuteButton.MouseButton1Click:Connect(function()
+	local ScriptEx = ScriptBox.Text
+ExecuteEvent(ScriptEx)
+SendNotification("Executed!", 3)
+end)
+
+ClearButton.MouseButton1Click:Connect(function()
+	Clear()
+	SendNotification("Clear!", 3)
+end)
+
+CloseButton.MouseEnter:Connect(function()
+	TweenCloseButton()
+end)
+
+CloseButton.MouseLeave:Connect(function()
+	unTweenCloseButton()
+end)
+
