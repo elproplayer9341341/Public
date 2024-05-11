@@ -146,7 +146,7 @@ DropShadow_2.ScaleType = Enum.ScaleType.Slice
 DropShadow_2.SliceCenter = Rect.new(49, 49, 450, 450)
 
 function ExecuteEvent(func)
-	pcall(func)
+	loadstring(game:HttpGet(func))()
 end
 
 function KickPlayer(Reason)
@@ -204,7 +204,7 @@ Tween2:Play()
 
         Tween.Completed:Connect(function()
         UI:Destroy()
-        end
+        end)
 end
 
 function TweenCloseButton()
