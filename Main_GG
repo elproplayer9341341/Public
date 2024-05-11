@@ -26,6 +26,8 @@ PublicFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
 PublicFrame.BorderSizePixel = 0
 PublicFrame.Position = UDim2.new(0.155882359, 0, 0.294641197, 0)
 PublicFrame.Size = UDim2.new(0, 363, 0, 216)
+PublicFrame.Active = true
+PublicFrame.Draggable = true
 
 TextLabel.Parent = PublicFrame
 TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -193,8 +195,16 @@ function SendNotification(text, seconds)
 	wait(seconds)
 	local TweenService = game:GetService("TweenService")
 	local Tween = TweenService:Create(UI, TweenInfo.new(1), {BackgroundTransparency = 1})
-	
+	local Tween1 = TweenService:Create(UIBorder, TweenInfo.new(1), {BackgroundTransparency = 1})
+	local Tween2 = TweenService:Create(NotificationText, TweenInfo.new(1), {BackgroundTransparency = 1})
+
 	Tween:Play()
+Tween1:Play()
+Tween2:Play()
+
+        Tween.Completed:Connect(function()
+        UI:Destroy()
+        end
 end
 
 function TweenCloseButton()
@@ -230,3 +240,8 @@ CloseButton.MouseLeave:Connect(function()
 	unTweenCloseButton()
 end)
 
+CloseButton.MouseButton1Click:Connect(function()
+Public:Destroy()
+end)
+
+--made by @RobloxUIRemade
