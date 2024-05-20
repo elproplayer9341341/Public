@@ -1,3 +1,4 @@
+--made by @RobloxUIRemade
 local Public = Instance.new("ScreenGui")
 local PublicFrame = Instance.new("Frame")
 local TextLabel = Instance.new("TextLabel")
@@ -37,7 +38,7 @@ TextLabel.BorderSizePixel = 0
 TextLabel.Position = UDim2.new(-0.0716253445, 0, 0, 0)
 TextLabel.Size = UDim2.new(0, 185, 0, 35)
 TextLabel.Font = Enum.Font.Arial
-TextLabel.Text = "Public"
+TextLabel.Text = "Public vBETA1"
 TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel.TextScaled = true
 TextLabel.TextSize = 14.000
